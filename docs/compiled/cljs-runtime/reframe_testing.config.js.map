@@ -1,0 +1,1 @@
+{"version":3,"sources":["reframe_testing/config.cljs"],"mappings":";AAEA,AAAKA,AACMC;AAEX;;;AAAA,AAAAC,AAAA,AAAA,AAAwBC","names":["reframe-testing.config/debug?","js/goog.DEBUG","js/goog.define","reframe-testing.config/version"],"sourcesContent":["(ns reframe-testing.config)\n\n(def debug?\n  ^boolean goog.DEBUG)\n\n(goog-define ^js/String version \"unknown\")\n"]}

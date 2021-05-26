@@ -1,0 +1,22 @@
+goog.provide('reframe_testing.views');
+reframe_testing.views.display_user = (function reframe_testing$views$display_user(p__37460){
+var map__37461 = p__37460;
+var map__37461__$1 = cljs.core.__destructure_map(map__37461);
+var first_name = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__37461__$1,new cljs.core.Keyword(null,"first_name","first_name",-1744629757));
+var id = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__37461__$1,new cljs.core.Keyword(null,"id","id",-1388402092));
+var avatar = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__37461__$1,new cljs.core.Keyword(null,"avatar","avatar",-1607499307));
+var email = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__37461__$1,new cljs.core.Keyword(null,"email","email",1415816706));
+return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.horizontal","div.horizontal",-1102813863),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),id], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"img.pr-15","img.pr-15",-272913217),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"src","src",-1651076051),avatar], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"h2","h2",-372662728),first_name], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"p","p",151049309),["(",cljs.core.str.cljs$core$IFn$_invoke$arity$1(email),")"].join('')], null)], null)], null);
+});
+reframe_testing.views.main_panel = (function reframe_testing$views$main_panel(){
+var name = re_frame.core.subscribe.cljs$core$IFn$_invoke$arity$1(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("reframe-testing.subs","name","reframe-testing.subs/name",-224876723)], null));
+var loading = re_frame.core.subscribe.cljs$core$IFn$_invoke$arity$1(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("reframe-testing.subs","loading","reframe-testing.subs/loading",1338422927)], null));
+var users = re_frame.core.subscribe.cljs$core$IFn$_invoke$arity$1(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("reframe-testing.subs","users","reframe-testing.subs/users",1355097499)], null));
+return new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentVector(null, 7, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"h1","h1",-1896887462),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"class","class",-2030961996),reframe_testing.styles.level1()], null),["What is this, Math? ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(((7) * (4)))].join('')," ",cljs.core.deref(name),". Version ",reframe_testing.config.version], null),(cljs.core.truth_(cljs.core.deref(loading))?"Loading...":null),cljs.core.map.cljs$core$IFn$_invoke$arity$2(reframe_testing.views.display_user,cljs.core.deref(users)),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"button","button",1456579943),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"on-click","on-click",1632826543),(function (){
+return re_frame.core.dispatch(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("reframe-testing.events","fetch-users","reframe-testing.events/fetch-users",1220931677)], null));
+})], null),"Make API Call"], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"button","button",1456579943),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"on-click","on-click",1632826543),(function (){
+return re_frame.core.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("reframe-testing.events","update-name","reframe-testing.events/update-name",-1042674730),"\uD83D\uDC02"], null));
+})], null),"Update name"], null)], null);
+});
+
+//# sourceMappingURL=reframe_testing.views.js.map
